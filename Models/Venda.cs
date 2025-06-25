@@ -1,0 +1,14 @@
+﻿namespace GraphQLApi.Models
+{
+    public class Venda
+    {
+        public int Id { get; set; }
+        public DateTime DataVenda { get; set; }
+        public decimal ValorTotal { get; set; }
+
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; } = default!;
+
+        public ICollection<ItemVenda> ItensVenda { get; set; } = new List<ItemVenda>();
+    }
+}
