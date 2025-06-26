@@ -13,6 +13,7 @@ builder.Services
     .AddQueryType(d => d.Name("Query"))
     .AddTypeExtension<CategoriaQuery>()
     .AddTypeExtension<ProdutoQuery>()
+    .AddTypeExtension<ClienteQuery>()
     .AddType<CategoriaType>()
     .AddType<ProdutoType>()
     .AddProjections()
