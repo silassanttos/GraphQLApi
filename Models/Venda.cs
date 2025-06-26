@@ -9,6 +9,6 @@
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; } = default!;
 
-        public ICollection<ItemVenda> ItensVenda { get; set; } = new List<ItemVenda>();
+        public ICollection<ItensVenda> ItensVenda { get; set; } = new List<ItensVenda>();
     }
 }

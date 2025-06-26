@@ -13,14 +13,10 @@ builder.Services
     .AddQueryType(d => d.Name("Query"))
     .AddTypeExtension<CategoriaQuery>()
     .AddTypeExtension<ClienteQuery>()
-    .AddTypeExtension<ItemVendaQuery>()
+    .AddTypeExtension<ItensVendaQuery>()
     .AddTypeExtension<ProdutoQuery>()
-<<<<<<< HEAD
-    .AddTypeExtension<ClienteQuery>()
-=======
     .AddTypeExtension<VendaQuery>()
     
->>>>>>> develop
     .AddType<CategoriaType>()
     .AddType<ProdutoType>()
     .AddProjections()
