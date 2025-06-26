@@ -12,8 +12,15 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType(d => d.Name("Query"))
     .AddTypeExtension<CategoriaQuery>()
-    .AddTypeExtension<ProdutoQuery>()
     .AddTypeExtension<ClienteQuery>()
+    .AddTypeExtension<ItemVendaQuery>()
+    .AddTypeExtension<ProdutoQuery>()
+<<<<<<< HEAD
+    .AddTypeExtension<ClienteQuery>()
+=======
+    .AddTypeExtension<VendaQuery>()
+    
+>>>>>>> develop
     .AddType<CategoriaType>()
     .AddType<ProdutoType>()
     .AddProjections()

@@ -1,6 +1,6 @@
 ﻿namespace GraphQLApi.Models
 {
-    public class ItemVenda
+    public class ItensVenda
     {
         public int Id { get; set; }
         public int Quantidade { get; set; }
