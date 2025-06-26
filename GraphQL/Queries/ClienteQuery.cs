@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 namespace GraphQLApi.GraphQL.Queries
 {
   
-        [ExtendObjectType(Name = "Query")]
-        public class ClienteQuery
+    [ExtendObjectType(Name = "Query")]
+    public class ClienteQuery
         {
             [UseProjection]
             [UseFiltering]
